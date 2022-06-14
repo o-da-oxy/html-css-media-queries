@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-collapse: collapse;
+    margin: 25px 20px;
+    width: calc(100% - 40px);
+}
+thead{
+    color: white;
+    background-color: rgb(53, 53, 53);
+}
+.row-2{
+    background-color: white;
+}
+td{
+    border: 0.5px solid rgb(192, 192, 192);
+    width: calc(100%/3);
+    padding: 6px;
+}
+.mob-table{
+    display: none;
+}
+/* Laptop */
+@media screen and (max-width: 1000px){
+    table{
+        font-size: 0.9em;
+    }
+}
+/* Tablet */
+@media screen and (max-width: 800px) and (min-width: 501px){
+    table{
+        font-size: 0.7em;
+    }
+}
+/* Phone */
+@media screen and (max-width: 500px){
+    .table{
+        display: none;
+    }
+    .mob-table{
+        display: inline-table;
+        width: calc(100% - 40px);
+        margin: 20px;
+        border-bottom: 1.5px solid rgb(202, 202, 202);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8em;
+    }
+    .border{
+        border-top: 1.5px solid rgb(202, 202, 202);
+        border-left: 1.5px solid rgb(202, 202, 202);
+        border-right: 1.5px solid rgb(202, 202, 202);
+        display: flex;
+        align-items: center;
+    }
+    .background{
+        background-color: white;
+    }
+    .t-head{
+        font-weight: bold;
+    }
+    .t-head, t-body{
+        padding: 5px 10px 5px 5px;
+    }
+}
